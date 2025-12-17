@@ -1,0 +1,15 @@
+
+services:
+
+  mqtt-broker:
+#    필요하면 추가하면 되는데 공식 이미지는 알아서 버전 잡아준다네요
+#    platform: linux/amd64
+    image: eclipse-mosquitto
+    container_name: factory_mqtt
+    ports:
+      - "1883:1883"
+      - "9001:9001"
+    volumes:
+      - ./mosquitto/config/mosquitto.conf:/mosquitto/config/mosquitto.conf
+      
+    restart: always

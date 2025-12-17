@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+pydantic
+websockets
+paho-mqtt
+opencv-python
+ultralytics
+python-multipart
+passlib
+bcrypt==4.0.1
+itsdangerous
+python-jose
